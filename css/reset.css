@@ -27,7 +27,7 @@ body {
 	color: var(--prim-text-color);
 }
 p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 	font-family: var(--font-family-sans-serif);
 	color: var(--text-color);
 }
@@ -55,3 +55,7 @@ a, button, a:hover {
     transition: all .25s ease;
     cursor: pointer;
 }
+
+/*  i used this file to remove the defualt values of my html doc so i can better buid it
+ and also set My own defualt valuas and variables such as colors and font sizes
+*/
