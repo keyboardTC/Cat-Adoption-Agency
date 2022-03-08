@@ -1,7 +1,7 @@
 
 // ======= Generate Random Numbers
 function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.floor(Math.random() * (max - min) + min);
 } 
 
 //  ========= Cat Array ======================
@@ -72,7 +72,6 @@ let catList = [...cat_array_list];
 let cats_container = document.querySelector('#cats-container');
 const load_more_btn = document.querySelector('.btn-show-more');
 
-
 // Modify the cat element, create the templete for all cats.
 const setCats = function (cat_array) {
 
@@ -100,9 +99,10 @@ const setCats = function (cat_array) {
     }
 }
 
+//  =========== Load the 1-4 cats the first run ========================
 setCats(catList.splice(0, 4));
 
-// ======== Load More OnClick Listener ========
+// ================ Load More OnClick Listener =======================
 load_more_btn.addEventListener('click', event => {
 
     if (!catList.length) {
