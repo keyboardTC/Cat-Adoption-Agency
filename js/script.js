@@ -72,7 +72,7 @@ let catList = [...cat_array_list];
 let cats_container = document.querySelector('#cats-container');
 const load_more_btn = document.querySelector('.btn-show-more');
 
-// Modify the cat element, create the templete for all cats.
+// Modify the cat container element, create the templete for all cats.
 const setCats = function (cat_array) {
 
     console.log(cat_array)
@@ -113,6 +113,6 @@ load_more_btn.addEventListener('click', event => {
 
     setCats(catList.splice(0, 4));
 
-    button.textContent = `Click count: ${event.detail}`;
+   //  button.textContent = `Click count: ${event.detail}`;
   });
 
